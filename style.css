@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.location ul li a {
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 14px;
+    color: white;
+}
+
+.location ul li i {
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.location ul {
+    display: flex;
+    list-style: none;
+}
+
+.location {
+    font-size: 15px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.homepage {
+    background-image: url('bin.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    box-sizing: border-box;
+    border: 2px solid rgb(245, 241, 241);
+    border-radius: 8px;
+}
+
+.homepage .row .row1 {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    height: 600px;
+    max-width: 650px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.homepage .row .row1 h1 {
+    color: rgba(236, 243, 236, 0.758);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.homepage .row .row1 span {
+    color: aqua;
+    font-size: 50px;
+}
+
+.homepage .row .row1 .btn-container {
+    margin-top: 50px;
+}
+
+
+
+.business{
+    height: 600px;
+    width: 80%;
+    background-color:white; 
+    margin-left: 170px;
+
+}
+.business .row{
+    display: flex;
+    padding-left: 120px;
+}
+.business .row .row1{
+    padding: 20px 20px;
+    height: 600px;
+    width: 35%;
+    background-color:rgba(210, 208, 208, 0.5); 
+
+
+
+}
+
+.business .row .row2{
+    padding: 20px 20px;
+
+    height: 600px;
+    width: 45%;
+    background-color:rgb(255, 255, 255); 
+
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .location ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location li {
+        margin: 5px 0;
+    }
+
+    .location .right-items {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .homepage {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-bottom: 50px; /* Adjust margin bottom for smaller screens */
+    }
+
+    .row {
+        flex-direction: column; /* Stack rows on smaller screens */
+    }
+
+    .row1,
+    .row2 {
+        padding: 20px; /* Add padding to the rows for better spacing */
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons in a column on smaller screens */
+        align-items: flex-start;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    .fa-circle-play {
+        padding-left: 0; /* Adjust padding for the icon */
+        padding-top: 10px; /* Adjust padding for the icon */
+    }
+}
